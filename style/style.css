@@ -1,0 +1,28 @@
+* {
+  background: #cccccc;
+}
+/* imagem  */
+#salao {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  /* background: #cccccc; */
+}
+
+p {
+  text-align: center;
+}
+
+#missa {
+  font-size: 20px;
+}
+/* ler o que esta dentro do em */
+em strong {
+  color: #ff0000;
+}
+
+.items {
+  font-style: italic;
+}
