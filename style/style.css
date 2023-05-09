@@ -1,16 +1,21 @@
-* {
-  background: #cccccc;
+body {
 }
 /* imagem  */
-#salao {
+#banner {
   width: 100%;
 }
-
-h1 {
+/* div do texto */
+.principal {
+  background: #cccccc;
+  padding: 30px;
+}
+.titulo-centralizado {
   text-align: center;
   /* background: #cccccc; */
 }
-
+.titulo-principal {
+  padding-left: 20px;
+}
 p {
   text-align: center;
 }
@@ -25,4 +30,28 @@ em strong {
 
 .items {
   font-style: italic;
+}
+/* div dos beneficios */
+.beneficios {
+  background: #ffffff;
+  padding: 20px;
+}
+
+/* 
+
+“block”  uma tag ocupar a largura inteira da página. Ele bloqueia o conteúdo daquela linha.
+ inline quando o conteúdo bloqueia o conteúdo da pagina , ela deixa que existam outros na lateral,
+Um elemento inline não me deixa alterar, por exemplo, o espaçamento externo e interno dele.
+
+inline e block ao mesmo tempo. Ou seja, ele bloqueia uma largura, mas essa largura é fixa. Sou eu que dou o tamanho. E ele me deixa também mexer na largura e nos espaçamentos interno e externo.
+ */
+
+ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+.imgebeneficio {
+  width: 50%;
 }
