@@ -1,57 +1,222 @@
-body {
-}
-/* imagem  */
-#banner {
-  width: 100%;
-}
-/* div do texto */
-.principal {
-  background: #cccccc;
-  padding: 30px;
-}
-.titulo-centralizado {
-  text-align: center;
-  /* background: #cccccc; */
-}
-.titulo-principal {
-  padding-left: 20px;
-}
-p {
-  text-align: center;
+* {
+  font-family: Helvetica;
 }
 
-#missa {
+header {
+  background: #bbbbbb;
+  padding: 20px 0;
+}
+
+/* .logo {
+  width: 50%;
+} */
+.caixa {
+  /* colocando o menu dentro da caixa */
+  position: relative;
+  width: 940px;
+  /* centralizando a caixa com o auto */
+  margin: 0 auto;
+}
+nav {
+  /* posição do elemento  */
+  position: absolute;
+  /* top: 175px; */
+  top: 125px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  /* espaçamento */
+  margin: 0 0 0 15px;
+}
+nav a {
+  /* uppercase letra maiscula */
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/* hover mouse en cima do elemento  */
+/* mouse por cima dos links dentro do menu de navegacao */
+nav a:hover {
+  color: #c78c19;
+  /* texto subilinhado  */
+  text-decoration: underline;
+}
+/* pagina de produtos */
+.produtos {
+  width: 940px;
+  /* centralizando a caixa com o auto */
+  margin: 0 auto;
+  padding: 50px 0;
+}
+/* lista usar inline block  */
+.produtos li {
+  display: inline-block;
+  text-align: center;
+  /* tamanho igual */
+  width: 30%;
+  /* horientar pela linha de cima */
+  vertical-align: top;
+
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  /* border-box, com isso aqui, os meus 30%, agora são definitivos, são sempre a largura e esses pixels de espaçamento interno, estão dentro desses 30%. */
+  box-sizing: border-box;
+  /* height: 500px; */
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+/* para destacar item com o mouse por cima usa o hover */
+
+.produtos li:hover {
+  border-color: #c78c19;
+  font-size: 40px;
+}
+
+/* comportamento ativo com o mouse clicado */
+.produtos li:active {
+  border-color: #088c19;
+}
+
+/* altera o tamanho da font quando passa o mouse por cima dentro da estrutura  */
+
+.produtos li:hover h2 {
+  font-size: 40px;
+}
+
+/* mexer no titulo  */
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.descricao {
+  font-size: 17px;
+  padding: 10px 0 0 0;
+}
+
+.servico {
+  padding: 50px 0 0;
+}
+
+.agenda a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.agenda {
+  margin-top: 15px;
+  text-align: center;
+  /* transition: 0.5s; */
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px;
+  background: #000000;
+
+  cursor: pointer;
+}
+
+.agenda:hover {
+  background: #c78c19;
+}
+
+/* comportamento ativo com o mouse clicado */
+.agenda:active {
+  border-color: #088c19;
+  background: #088c19;
+}
+/* contato */
+
+main {
+  width: 940px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 940px;
+  margin: 40px 0;
+}
+
+label {
+  font-weight: bold;
+  margin: 15px 0;
   font-size: 20px;
 }
-/* ler o que esta dentro do em */
-em strong {
-  color: #ff0000;
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
-.items {
-  font-style: italic;
+div {
+  display: flex;
 }
-/* div dos beneficios */
-.beneficios {
-  background: #ffffff;
-  padding: 20px;
+input#agree-id {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 }
 
-/* 
-
-“block”  uma tag ocupar a largura inteira da página. Ele bloqueia o conteúdo daquela linha.
- inline quando o conteúdo bloqueia o conteúdo da pagina , ela deixa que existam outros na lateral,
-Um elemento inline não me deixa alterar, por exemplo, o espaçamento externo e interno dele.
-
-inline e block ao mesmo tempo. Ou seja, ele bloqueia uma largura, mas essa largura é fixa. Sou eu que dou o tamanho. E ele me deixa também mexer na largura e nos espaçamentos interno e externo.
- */
-
-ul {
-  display: inline-block;
-  vertical-align: top;
-  width: 20%;
-  margin-right: 15%;
+label#agree-id {
+  padding: 2px 10px;
+  margin-bottom: 5px;
+  margin-top: 0;
 }
-.imgebeneficio {
-  width: 50%;
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 940px;
+  /* margin: 20px 0; */
+}
+
+button:hover {
+  background: #088c19;
+}
+
+/* comportamento ativo com o mouse clicado */
+/* button:active {
+  border-color: #088c19;
+  background: #088c19;
+} */
+
+/* rodapé */
+footer {
+  text-align: center;
+
+  background: #bbbbbb;
+  padding: 20px 0;
+}
+.copyright {
+  font-size: 13px;
+  color: #000000;
+  font-weight: 900px;
+  margin-top: 20px;
 }

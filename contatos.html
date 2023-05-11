@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- limpar o css -->
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="js/scripts.js" defer></script>
+
+    <title>Contatos do Salão</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="caixa">
+        <!-- dando importancia a imagem -->
+        <h1>
+          <img class="logo" src="image/logo-removebg-preview.png" alt="" />
+        </h1>
+        <!-- lista nao ordenada -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- parte principal -->
+    <main>
+      <h1>Contatos</h1>
+      <form action="" id="form">
+        <label for="name">Nome Completo:</label>
+        <input type="text" id="name" placeholder="Nome" />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="E-mail" />
+
+        <label for="telefone">Telefone:</label>
+        <input
+          type="telefone"
+          id="telefone"
+          placeholder="Digite o seu Telefone"
+        />
+
+        <label for="password">Senha:</label>
+        <input
+          type="password"
+          id="password"
+          name="senha"
+          onchange="confereSenha();"
+          placeholder="Digite sua Senha"
+        />
+
+        <label for="password">Confirmar Senha:</label>
+        <input
+          type="password"
+          id="confirmation"
+          name="confirma"
+          onchange="confereSenha();"
+          placeholder="Confirmar Senha"
+        />
+
+        <label for="job">Planos</label>
+        <select name="job" id="job">
+          <option value="">Escolha o plano</option>
+          <option value="yes">Básico</option>
+          <option value="No">Premium</option>
+        </select>
+        <label for="menssage">Deixe seu comentário:</label>
+        <textarea name="menssage" id="menssage"></textarea>
+        <div>
+          <input type="checkbox" name="agree" id="agree-id" required />
+          <label for="agree-id" id="agree-id"
+            >Li e concordo com os termos</label
+          >
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <!-- rodapé -->
+    <!-- &copy; simbolo -->
+    <footer>
+      <img src="image/logo-removebg-preview.png" />
+      <p class="copyright">&copy; Copyright Salão de Beleza 2023</p>
+    </footer>
+  </body>
+</html>
