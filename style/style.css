@@ -17,6 +17,7 @@ header {
   /* centralizando a caixa com o auto */
   margin: 0 auto;
 }
+
 nav {
   /* posição do elemento  */
   position: absolute;
@@ -46,6 +47,79 @@ nav a:hover {
   /* texto subilinhado  */
   text-decoration: underline;
 }
+
+.titulo-principal {
+  margin: 0;
+  top: 240px;
+  /* posição do elemento  */
+  position: absolute;
+  right: 400px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* home  */
+/* imagem  */
+#banner {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* div do texto */
+.principal {
+  background: #cccccc;
+  padding: 30px;
+}
+
+.titulo-centralizado {
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+  font-size: 22px;
+
+  /* background: #cccccc; */
+}
+
+p {
+  text-align: center;
+  margin: 16px 0;
+  font-size: 18px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.missa {
+  font-size: 20px;
+}
+
+/* ler o que esta dentro do em */
+em strong {
+  color: #ff0000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.items {
+  font-style: italic;
+}
+
+/* div dos beneficios */
+.beneficios {
+  background: #ffffff;
+  padding: 20px;
+}
+.listabeneficio {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+.imgebeneficio {
+  width: 50%;
+}
+
 /* pagina de produtos */
 .produtos {
   width: 940px;
@@ -138,7 +212,7 @@ main {
   width: 940px;
   margin: 0 auto;
 }
-h1 {
+.contato {
   text-align: center;
   font-size: 26px;
   font-weight: bold;
@@ -169,7 +243,7 @@ textarea {
   font-size: 20px;
 }
 
-div {
+.checkbox {
   display: flex;
 }
 input#agree-id {

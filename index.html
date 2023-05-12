@@ -4,12 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style-home.css" />
+
+    <link rel="stylesheet" href="style/reset.css" />
+    <!-- <link rel="stylesheet" href="style/style-home.css" /> -->
+    <link rel="stylesheet" href="style/style.css" />
+
     <title>Salão de Beleza</title>
   </head>
   <body>
     <header>
-      <h1 class="titulo-principal">Salão de Beleza</h1>
+      <div class="caixa">
+        <!-- dando importancia a imagem -->
+        <h1>
+          <img class="logo" src="image/logo-removebg-preview.png" alt="" />
+          <!-- Salão de Beleza -->
+        </h1>
+        <!-- lista nao ordenada -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+          </ul>
+        </nav>
+        <h1 class="titulo-principal">Salão de Beleza</h1>
+      </div>
     </header>
 
     <!-- <img id="salao" src="banner.jpg" /> -->
@@ -25,7 +44,7 @@
         em 2019, o Salão de Beleza já é destaque na cidade e conquista novos
         clientes a cada dia.
       </p>
-      <p id="missa">
+      <p class="missa">
         <em>
           Nossa missão é:<strong>
             "Proporcionar auto-estima e qualidade de vida aos clientes".</strong
@@ -41,7 +60,7 @@
     <div class="beneficios">
       <h3 class="titulo-centralizado">Benefícios</h3>
       <!-- ul lista não ordenada -->
-      <ul>
+      <ul class="listabeneficio">
         <li class="items">Atendimento aos Clientes</li>
         <li class="items">Espaço Utilizado</li>
         <li class="items">Localização</li>
@@ -49,5 +68,12 @@
       </ul>
       <img class="imgebeneficio" src="image/salao-de-beleza-12.jpg" />
     </div>
+
+    <!-- rodapé -->
+    <!-- &copy; simbolo -->
+    <footer>
+      <img src="image/logo-removebg-preview.png" />
+      <p class="copyright">&copy; Copyright Salão de Beleza 2023</p>
+    </footer>
   </body>
 </html>
