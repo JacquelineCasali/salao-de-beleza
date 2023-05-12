@@ -103,6 +103,11 @@ em strong {
 
 .items {
   font-style: italic;
+  /* display: list-item; */
+
+  font-size: 20px;
+  margin: 0 0 5px 0;
+  /* text-align: -webkit-match-parent; */
 }
 
 /* div dos beneficios */
@@ -114,7 +119,11 @@ em strong {
   display: inline-block;
   vertical-align: top;
   width: 20%;
-  margin-right: 15%;
+
+  margin: 20px 15% 20px 0;
+
+  list-style-type: disc;
+  padding-inline-start: 40px;
 }
 .imgebeneficio {
   width: 50%;
