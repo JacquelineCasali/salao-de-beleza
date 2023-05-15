@@ -7,6 +7,7 @@
     <!-- limpar o css -->
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
+
     <script src="js/scripts.js" defer></script>
 
     <title>Contatos do Salão</title>
@@ -17,7 +18,7 @@
       <div class="caixa">
         <!-- dando importancia a imagem -->
         <h1>
-          <img class="logo" src="image/logo-removebg-preview.png" alt="" />
+          <img class="logo" src="image/logo-removebg-preview.png" alt="Logo" />
         </h1>
         <!-- lista nao ordenada -->
         <nav>
@@ -33,60 +34,114 @@
     <main>
       <h1 class="contato">Contatos</h1>
       <form action="" id="form">
-        <label for="name">Nome Completo:</label>
-        <input type="text" id="name" placeholder="Nome" />
+        <label class="label" for="name">Nome Completo:</label>
+
+        <!-- autofocus deixa o input piscando  -->
+        <input class="input-padrao" type="text" id="name" placeholder="Nome" />
 
         <label for="email">E-mail:</label>
-        <input type="email" id="email" placeholder="E-mail" />
+        <input
+          class="input-padrao"
+          type="email"
+          id="email"
+          placeholder="usuario12@host.com.br"
+        />
 
         <label for="telefone">Telefone:</label>
         <input
-          type="telefone"
+          class="input-padrao"
+          type="tel"
           id="telefone"
-          placeholder="Digite o seu Telefone"
+          placeholder="(xx) xxxxx-xxxx"
         />
 
-        <label for="password">Senha:</label>
-        <input
-          type="password"
-          id="password"
-          name="senha"
-          onchange="confereSenha();"
-          placeholder="Digite sua Senha"
-        />
-
-        <label for="password">Confirmar Senha:</label>
-        <input
-          type="password"
-          id="confirmation"
-          name="confirma"
-          onchange="confereSenha();"
-          placeholder="Confirmar Senha"
-        />
-
-        <label for="job">Planos</label>
-        <select name="job" id="job">
-          <option value="">Escolha o plano</option>
-          <option value="yes">Básico</option>
-          <option value="No">Premium</option>
-        </select>
-        <label for="menssage">Deixe seu comentário:</label>
+        <label for="menssage">Mensagem:</label>
         <textarea name="menssage" id="menssage"></textarea>
-        <div class="checkbox">
-          <input type="checkbox" name="agree" id="agree-id" required />
-          <label for="agree-id" id="agree-id"
-            >Li e concordo com os termos</label
+        <!-- escolha de contato -->
+        <!-- fieldset configuração de um ou mais campos referente a um assunto espesifico -->
+        <fieldset>
+          <!-- legend titulo de um fieldset -->
+
+          <legend>Como prefere o nosso contato?</legend>
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="contato"
+              value="email"
+              id="radio"
+              required
+            />
+            Email</label
+          >
+
+          <!-- name="contato" para desmarcar o outro -->
+          <!-- checked deixa a opção marcada -->
+          <label for="radio-telefone">
+            <input type="radio" name="contato" value="telefone" id="radio" />
+            Telefone</label
+          >
+
+          <label for="radio-whatsApp">
+            <input type="radio" name="contato" value="whatsApp" id="radio" />
+            WhatsApp</label
+          >
+        </fieldset>
+        <!-- seleçao de horario  -->
+        <fieldset>
+          <legend class="preferecontato">
+            Qaul horário prefere ser atendido?
+          </legend>
+
+          <select id="job">
+            <option value=""></option>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+        </fieldset>
+
+        <div>
+          <label class="checkbox">
+            <input type="checkbox" checked /> Gostaria de receber nossas
+            novidades por email?</label
           >
         </div>
 
         <button type="submit">Enviar</button>
       </form>
+
+      <table>
+        <!-- cabeçalho da tabela -->
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>Fechado</td>
+          </tr>
+          <tr>
+            <td>Terça a Quinta</td>
+            <td>8h ~ 19h</td>
+          </tr>
+          <tr>
+            <td>Sexta e Sabado</td>
+            <td>8h ~ 20h</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
     <!-- rodapé -->
     <!-- &copy; simbolo -->
     <footer>
-      <img src="image/logo-removebg-preview.png" />
-      <p class="copyright">&copy; Copyright Salão de Beleza 2023</p>
+      <div>
+        <img src="image/logo-removebg-preview.png" alt="logo" />
+        <p class="copyright">&copy; Copyright Salão de Beleza 2023</p>
+      </div>
     </footer>
   </body>
 </html>
