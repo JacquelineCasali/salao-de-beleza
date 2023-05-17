@@ -7,7 +7,18 @@
     <!-- limpar o css -->
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
+    <!-- fontes do google -->
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap ícone (biblioteca de ícones)  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <script src="js/scripts.js" defer></script>
 
     <title>Contatos do Salão</title>
@@ -20,6 +31,9 @@
         <h1>
           <img class="logo" src="image/logo-removebg-preview.png" alt="Logo" />
         </h1>
+
+        <h1 class="titulo-principal">Salão de Beleza</h1>
+
         <!-- lista nao ordenada -->
         <nav>
           <ul>
@@ -31,7 +45,7 @@
       </div>
     </header>
     <!-- parte principal -->
-    <main>
+    <main class="formulario-contato">
       <h1 class="contato">Contatos</h1>
       <form action="" id="form">
         <label class="label" for="name">Nome Completo:</label>
@@ -89,7 +103,7 @@
         <!-- seleçao de horario  -->
         <fieldset>
           <legend class="preferecontato">
-            Qaul horário prefere ser atendido?
+            Qual horário prefere ser atendido?
           </legend>
 
           <select id="job">
@@ -138,9 +152,14 @@
     <!-- rodapé -->
     <!-- &copy; simbolo -->
     <footer>
-      <div>
-        <img src="image/logo-removebg-preview.png" alt="logo" />
+      <div class="caixa">
+        <img class="logo" src="image/logo-removebg-preview.png" alt="Logo" />
         <p class="copyright">&copy; Copyright Salão de Beleza 2023</p>
+        <nav>
+          <li><i class="bi bi-instagram"></i></li>
+          <li><i class="bi bi-facebook"></i></li>
+          <li><i class="bi bi-whatsapp"></i></li>
+        </nav>
       </div>
     </footer>
   </body>

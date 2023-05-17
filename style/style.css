@@ -1,19 +1,16 @@
-* {
-  font-family: Helvetica;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
   background: #bbbbbb;
   padding: 20px 0;
 }
-
-/* .logo {
-  width: 50%;
-} */
+/* caixa do cabeçalho */
 .caixa {
   /* colocando o menu dentro da caixa */
   position: relative;
-  width: 940px;
+  width: 90%;
   /* centralizando a caixa com o auto */
   margin: 0 auto;
 }
@@ -36,7 +33,7 @@ nav a {
   text-transform: uppercase;
   color: #000000;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 26px;
   text-decoration: none;
 }
 
@@ -53,37 +50,63 @@ nav a:hover {
   top: 240px;
   /* posição do elemento  */
   position: absolute;
-  right: 400px;
+  right: 40%;
   font-size: 30px;
   font-weight: bold;
+  opacity: 0.5;
 }
 
-/* home  */
+/* pagina  */
 /* imagem  */
-#banner {
+.banner {
   width: 100%;
   margin-top: 5px;
+  opacity: 0.7;
 }
 
 /* div do texto */
-.principal {
-  background: #cccccc;
-  padding: 30px;
-}
 
-.titulo-centralizado {
+.tituloprincipal {
   text-align: center;
+
+  margin: 0 0 1em;
+  /* para que a fonte seja o dobro da fonte padrão, independe do tamanho dessa fonte padrão, utilizamos a medida em */
+
+  font-size: 2em;
+
+  /* usa o clear para limpar o float usado no utensilio */
+
+  clear: left;
+  /* opacidade no titulo */
+  /* color: rgba(0, 0, 0, 0.4); */
+}
+/* para destacar so a primeira linha usa o pseudo elemento  */
+/* .tituloprincipal:first-letter {
   font-weight: bold;
-  margin: 20px 0;
-  font-size: 22px;
+} */
 
+/* para colocar colchete no texto usamos  */
+
+/* .tituloprincipal:before {
+  content: "[";
+}
+.tituloprincipal:after {
+  content: "]";
+} */
+
+/* corpo principal sobre o salao  */
+.principal {
   /* background: #cccccc; */
+  padding: 3em 0;
+  width: 940px;
+  margin: 0 auto;
 }
 
-.text {
-  text-align: center;
-  margin: 16px 0;
-  font-size: 18px;
+.principal p {
+  margin: 0 0 1em;
+  background: #fefefe;
+  line-height: 1.2;
+  text-align: justify;
 }
 
 strong {
@@ -98,35 +121,108 @@ strong {
 em strong {
   color: #ff0000;
   font-style: italic;
-  font-weight: bold;
+}
+/* imagem  */
+.utensilios {
+  width: 180px;
+  /* posição com o texto em volta usando o float */
+  /* float a afeta todos os elementos da pagina */
+  float: left;
+  margin: 0 20px 20px 0;
+  opacity: 1;
+  transition: 400ms;
+  /* sombra na imagem   */
+  box-shadow: 5px 5px 5px blue;
+}
+
+/* com o mouse por cima */
+.utensilios:hover {
+  /* deixa o elemento opaco  */
+  opacity: 0.3;
+}
+
+/* parte dos beneficios */
+
+.beneficios {
+  padding: 3em 0;
+  /* background: #bbbbbb; */
+
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.conteudo-beneficios {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.lista-beneficio {
+  /* no inline block o elemento no html tem que esta colado um no outro */
+  display: inline-block;
+  /* alinhado na parte de cima  */
+  vertical-align: top;
+  width: 40%;
 }
 
 .items {
   font-style: italic;
-  /* display: list-item; */
 
-  font-size: 20px;
-  margin: 0 0 5px 0;
-  /* text-align: -webkit-match-parent; */
+  font-size: 18px;
+
+  /* line-height altura da linha */
+  line-height: 1.5;
+  margin-right: 7px;
+}
+/* para colocar a estrela antes pega a estrela do google */
+.items:before {
+  content: "🟉";
 }
 
-/* div dos beneficios */
-.beneficios {
-  background: #ffffff;
-  padding: 20px;
-}
-.listabeneficio {
-  display: inline-block;
-  vertical-align: top;
-  width: 20%;
+/* pseudo elemento para selecionar um item só */
 
-  margin: 20px 15% 20px 0;
-
-  list-style-type: disc;
-  padding-inline-start: 40px;
+.items:first-child {
+  font-weight: bold;
 }
+/* pseudo elemento para selecionar elemento pares */
+/* .items:nth-child(2n) {
+  font-weight: bold;
+} */
+
 .imgebeneficio {
-  width: 50%;
+  width: 60%;
+  /* deixa o elemento opaco  */
+  opacity: 1;
+  transition: 400ms;
+  /* sombra na imagem   */
+  /* box-shadow: 5px 5px 30px 20px black; */
+  box-shadow: 5px 5px 30px black;
+}
+
+/* com o mouse por cima */
+.imgebeneficio:hover {
+  /* deixa o elemento opaco  */
+  opacity: 0.3;
+}
+
+.video {
+  margin: 1em auto;
+
+  width: 560px;
+}
+
+.mapa {
+  padding: 3em 0;
+  /* para colocar o gradiente usa o linear-gradient(orange, blue) */
+  background: #bbbbbb;
+  /* background: linear-gradient(#fefefe, #888888); */
+}
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.mapa-imagem {
+  width: 940px;
+  margin: 0 auto;
 }
 
 /* pagina de produtos */
@@ -216,12 +312,14 @@ em strong {
   border-color: #088c19;
   background: #088c19;
 }
+
 /* contato */
 
-main {
+.formulario-contato {
   width: 940px;
   margin: 0 auto;
 }
+
 .contato {
   text-align: center;
   font-size: 26px;
@@ -241,7 +339,7 @@ form label {
 
 .input-padrao,
 textarea {
-  width: 100%;
+  width: 90%;
   padding: 10px 25px;
   border: 1px solid #333;
   border-radius: 10px;
@@ -311,11 +409,34 @@ table {
 /* rodapé */
 footer {
   text-align: center;
-
+  /* width: 100%; */
   background: #bbbbbb;
+  /* background: black; */
   padding: 20px 0;
+  /* background: linear-gradient(#fefefe, #888888);
+} */
+}
+nav i {
+  /* uppercase letra maiscula */
+
+  color: black;
+
+  font-size: 50px;
 }
 
+/* passar mouse por cima */
+/* nav i:hover {
+  color: #c78c19;
+  cursor: pointer;
+  width: 50%;
+} */
+.copyright {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 900px;
+  margin-top: 20px;
+}
+/* tabela */
 thead {
   background: #555555;
   color: white;
@@ -326,9 +447,82 @@ th {
   border: 1px solid #000000;
   padding: 8px 15px;
 }
-.copyright {
-  font-size: 13px;
-  color: #000000;
-  font-weight: 900px;
-  margin-top: 20px;
+/* responsividade */
+
+/* largura maxima de 480px */
+@media screen and (max-width: 540px) {
+  .caixa,
+  .principal,
+  .conteudo-beneficios,
+  .mapa-imagem,
+  .formulario-contato {
+    width: auto;
+    margin: 0 15px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  .logo {
+    width: 60%;
+  }
+  nav,
+  .titulo-principal {
+    position: static;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+  .lista-beneficio,
+  .imgebeneficio {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .produtos li {
+    display: block;
+    margin: 0 40px 20px 50px;
+  }
+
+  select {
+    width: 80%;
+  }
+  .checkbox {
+    line-height: 1.2;
+  }
+  table {
+    margin: 40px 60px 40px;
+  }
+}
+/* largura maxima de 480px */
+@media screen and (max-width: 940px) {
+  .caixa,
+  .principal,
+  .conteudo-beneficios,
+  .mapa-imagem,
+  .formulario-contato {
+    width: auto;
+    margin: 0 25px;
+  }
+
+  .titulo-principal {
+    position: static;
+    margin-top: 10px;
+    text-align: center;
+  }
+  /* .logo {
+    width: 40%;
+  } */
+  nav {
+    right: 15px;
+    top: 60px;
+    margin-right: 5px;
+  }
+  /* .input-padrao,
+  textarea {
+    width: 95%;
+  } */
 }

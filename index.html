@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style/reset.css" />
-    <!-- <link rel="stylesheet" href="style/style-home.css" /> -->
     <link rel="stylesheet" href="style/style.css" />
 
+    <!-- fontes do google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap ícone (biblioteca de ícones)  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <title>Salão de Beleza</title>
   </head>
   <body>
@@ -20,6 +27,7 @@
           <!-- Salão de Beleza -->
         </h1>
         <!-- lista nao ordenada -->
+        <h1 class="titulo-principal">Salão de Beleza</h1>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -27,53 +35,101 @@
             <li><a href="contatos.html">Contatos</a></li>
           </ul>
         </nav>
-        <h1 class="titulo-principal">Salão de Beleza</h1>
+  
       </div>
     </header>
 
-    <!-- <img id="salao" src="banner.jpg" /> -->
-    <img id="banner" src="image/salao.jpg" />
-    <div class="principal">
-      <h2 class="titulo-centralizado">Sobre o Salão de Beleza</h2>
+    <img class="banner" src="image/salao.jpg" />
+    <main>
+      <!-- um conteudo so usa a section -->
+      <section class="principal">
+        <h2 class="tituloprincipal">Sobre o Salão de Beleza</h2>
+        <img
+          class="utensilios"
+          src="image/utensilios.jpg"
+          alt="Utensilios de um salão"
+        />
 
-      <!--strong da inportancia do conteudo  coloca a palavra em dastaque e em negrito-->
-      <!-- <em> coloca o conteudo em italico -->
-      <p class="text">
-        Localizada no coração da cidade o <strong> Salão de Beleza </strong>
-        traz para o mercado o que há de melhor para o seu cabelo e unha. Fundada
-        em 2019, o Salão de Beleza já é destaque na cidade e conquista novos
-        clientes a cada dia.
-      </p>
-      <p class="missa">
-        <em>
-          Nossa missão é:<strong>
-            "Proporcionar auto-estima e qualidade de vida aos clientes".</strong
-          >
-        </em>
-      </p>
-      <p class="text">
-        Oferecemos profissionais experientes e antenados às mudanças no mundo da
-        moda. O atendimento possui padrão de excelência e agilidade, garantindo
-        qualidade e satisfação dos nossos clientes.
-      </p>
-    </div>
-    <div class="beneficios">
-      <h3 class="titulo-centralizado">Benefícios</h3>
-      <!-- ul lista não ordenada -->
-      <ul class="listabeneficio">
-        <li class="items">Atendimento aos Clientes</li>
-        <li class="items">Espaço Utilizado</li>
-        <li class="items">Localização</li>
-        <li class="items">Profissionais</li>
-      </ul>
-      <img class="imgebeneficio" src="image/salao-de-beleza-12.jpg" />
-    </div>
+        <!--strong da inportancia do conteudo  coloca a palavra em dastaque e em negrito-->
+        <!-- <em> coloca o conteudo em italico -->
+        <p>
+          Localizada no coração da cidade o <strong> Salão de Beleza </strong>
+          traz para o mercado o que há de melhor para o seu cabelo e unha.
+          Fundada em 2019, o Salão de Beleza já é destaque na cidade e conquista
+          novos clientes a cada dia.
+        </p>
+        <p class="missa">
+          <em>
+            Nossa missão é:<strong>
+              "Proporcionar auto-estima e qualidade de vida aos
+              clientes".</strong
+            >
+          </em>
+        </p>
+        <p>
+          Oferecemos profissionais experientes e antenados às mudanças no mundo
+          da moda. O atendimento possui padrão de excelência e agilidade,
+          garantindo qualidade e satisfação dos nossos clientes.
+        </p>
+      </section>
+      <section class="beneficios">
+        <h3 class="tituloprincipal">Benefícios</h3>
+<div class="conteudo-beneficios">
 
+        <!-- ul lista não ordenada -->
+        <ul class="lista-beneficio">
+          <li class="items">Atendimento aos Clientes</li>
+          <li class="items">Espaço diferenciado</li>
+          <li class="items">Localização</li>
+          <li class="items">Profissionais Especializados</li>
+
+        </ul><img class="imgebeneficio" src="image/salao-de-beleza-12.jpg" />
+     
+      </div>
+      
+<!-- <div class="video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
+  
+</section>
+     
+     
+      </section>
+
+
+
+
+      <section class="mapa">
+        <h3 class="tituloprincipal">Nosso Estabelecimento</h3>
+        <p>Nosso estabelecimento está localizado no coração da cidade</p>
+
+        <!--  no google maps na parte de incoporar mapa copiamos o link  -->
+
+       <div class="mapa-imagem">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8954.556238001956!2d-46.639652425514754!3d-23.54160115687976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f8c61020205%3A0x9ae474c606fef4!2sMercado%20Municipal%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1684246832739!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+       </div> 
+      </section>
+    </main>
     <!-- rodapé -->
     <!-- &copy; simbolo -->
     <footer>
-      <img src="image/logo-removebg-preview.png" />
-      <p class="copyright">&copy; Copyright Salão de Beleza 2023</p>
+      <div class="caixa">
+        <img class="logo" src="image/logo-removebg-preview.png" />
+        <p class="copyright">&copy; Copyright Salão de Beleza 2023</p>
+        <nav>
+          <li><i class="bi bi-instagram"></i></li>
+          <li><i class="bi bi-facebook"></i></li>
+          <li><i class="bi bi-whatsapp"></i></li>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>

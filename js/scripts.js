@@ -6,7 +6,6 @@ const telefoneInput = document.querySelector("#telefone");
 const jobSelect = document.querySelector("#job");
 
 // const menssageTextarea = document.querySelector("#menssage");
-
 // funcçao do input piscar
 // Da foco a um campo de input quando a pagina é recarregada:
 window.onload = function () {
